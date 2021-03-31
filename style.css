@@ -26,6 +26,7 @@ html {
 
 body {
     height: 100vh;
+    touch-action: manipulation;
 }
 
 a {
