@@ -132,24 +132,11 @@ h2 {
 }
 
 /* BOTONES */
-button.submit {
-    color: white;
-    background: #264149;
-    padding: 5rem;
-    border: 1px solid #d9beb6;
-    box-shadow: 0.4rem 0.4rem 0.4rem #d9beb6;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 2rem;
-    font-family: 'Bitter',
-        serif;
-
-}
 
 button.restabotton {
     color: white;
     background: #264149;
-    padding: 1rem;
+    padding: 3rem 1rem 3rem 1rem;
     border: 1px solid #d9beb6;
     box-shadow: 0.4rem 0.4rem 0.4rem #d9beb6;
     text-decoration: none;
@@ -163,7 +150,22 @@ button.restabotton {
 button.sumabotton {
     color: white;
     background: #264149;
-    padding: 1rem 6rem 1rem 6rem;
+    padding: 3rem 6rem 3rem 6rem;
+    border: 1px solid #d9beb6;
+    box-shadow: 0.4rem 0.4rem 0.4rem #d9beb6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: 'Bitter',
+        serif;
+
+}
+
+button.refreshbotton {
+    color: white;
+    background: #264149;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-right: 1.6rem;
     border: 1px solid #d9beb6;
     box-shadow: 0.4rem 0.4rem 0.4rem #d9beb6;
     text-decoration: none;
