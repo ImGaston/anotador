@@ -1,7 +1,7 @@
 # Anotador
 [A jugar!](https://gc-ar.github.io/anotador/)
 
-:pencil2: Anotador simple cuando faltan los fosforos o nadie fuma
+:pencil2:  Anotador simple cuando faltan los fosforos o nadie fuma
 
 > Cuando era charabon a mi me asustaba el cuco, ahora te asusto yo con Falta envido y truco.
 
