@@ -39,7 +39,10 @@ h2 {
 
 .contador {
     font-size: 16rem;
+    font-family: 'Bitter',
+        serif;
 }
+/* GRID HEADER */
 .header {
     display: grid;
     place-content: center / center;
@@ -51,11 +54,14 @@ h2 {
     font-family: 'Bitter', serif;
     font-size: 3.2rem;
 }
+/* GRID FOOTER */
 .footer  {
     display: grid;
     grid-template:repeat(1, 1fr) / repeat(2, 1fr);
     place-content: center / center;
     height: 10vh;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
 }
 .footer__link {
     justify-self: center;
@@ -131,6 +137,7 @@ button.restabotton {
     padding: 3rem 1rem 3rem 1rem;
     border: 1px solid #d9beb6;
     box-shadow: 0.4rem 0.4rem 0.4rem #d9beb6;
+    border-radius: 15px;
     text-decoration: none;
     font-weight: 600;
     font-size: 3.2rem;
@@ -144,6 +151,7 @@ button.sumabotton {
     background: #264149;
     padding: 3rem 6rem 3rem 6rem;
     border: 1px solid #d9beb6;
+    border-radius: 15px;
     box-shadow: 0.4rem 0.4rem 0.4rem #d9beb6;
     text-decoration: none;
     font-weight: 600;
@@ -153,12 +161,13 @@ button.sumabotton {
 
 }
 
-button.refreshbotton {
+button.refresh {
     color: white;
     background: #264149;
     padding: 1rem 1rem 1rem 1rem;
     /* margin-right: 1.6rem; */
     border: 1px solid #d9beb6;
+    border-radius: 15px;
     box-shadow: 0.4rem 0.4rem 0.4rem #d9beb6;
     text-decoration: none;
     font-weight: 600;
