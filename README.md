@@ -1,5 +1,5 @@
 # Anotador
-[A jugar!](https://gc-ar.github.io/anotador/)
+[A jugar!](https://anotador.com.ar/)
 
 :pencil2:  Anotador simple cuando faltan los fosforos o nadie fuma
 
