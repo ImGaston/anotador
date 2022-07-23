@@ -6,9 +6,6 @@ const sumae = document.querySelector('.sumae');
 const restae = document.querySelector('.restae');
 const refresh = document.querySelector('.refresh');
 
-console.log(parseInt(window.localStorage.getItem('nosotros')));
-console.log(parseInt(window.localStorage.getItem('ellos')));
-
 let contadorNosotros = (localStorage.getItem('nosotros') === null) ? 0 : parseInt(window.localStorage.getItem('nosotros'));
 let contadorEllos = (localStorage.getItem('ellos') === null) ? 0 : parseInt(window.localStorage.getItem('ellos'));
 nosotros.innerHTML = `${contadorNosotros}`;
