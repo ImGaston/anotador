@@ -5,14 +5,21 @@ const restan = document.querySelector('.restan');
 const sumae = document.querySelector('.sumae');
 const restae = document.querySelector('.restae');
 const refresh = document.querySelector('.refresh');
-let contadorNosotros = 0;
-let contadorEllos = 0;
+
+console.log(parseInt(window.localStorage.getItem('nosotros')));
+console.log(parseInt(window.localStorage.getItem('ellos')));
+
+let contadorNosotros = (localStorage.getItem('nosotros') === null) ? 0 : parseInt(window.localStorage.getItem('nosotros'));
+let contadorEllos = (localStorage.getItem('ellos') === null) ? 0 : parseInt(window.localStorage.getItem('ellos'));
+nosotros.innerHTML = `${contadorNosotros}`;
+ellos.innerHTML = `${contadorEllos}`;
 
 // Funciones para sumar
 function sumaNosotros() {
   if (contadorNosotros < 30) {
   contadorNosotros += 1;
   nosotros.innerHTML = `${contadorNosotros}`;
+  localStorage.setItem('nosotros', contadorNosotros);
   }
 }
 
@@ -20,6 +27,7 @@ function sumaEllos() {
   if (contadorEllos < 30) {
   contadorEllos += 1;
   ellos.innerHTML = `${contadorEllos}`;
+  localStorage.setItem('ellos', contadorEllos);
   }
 }
 
@@ -28,6 +36,7 @@ function restaNosotros(){
   if (contadorNosotros >= 1) {
   contadorNosotros -= 1;
   nosotros.innerHTML = `${contadorNosotros}`;
+  localStorage.setItem('nosotros', contadorNosotros)
   }
 }
 
@@ -35,14 +44,17 @@ function restaEllos() {
   if (contadorEllos >=1) {
   contadorEllos -= 1;
   ellos.innerHTML = `${contadorEllos}`;
+  localStorage.setItem('ellos', contadorEllos);
   }
 }
 
 function restart() {
-  ellos.innerHTML = `${0}`;
-  nosotros.innerHTML = `${0}`;
-  contadorEllos = 0;
   contadorNosotros = 0
+  contadorEllos = 0;
+  nosotros.innerHTML = `${contadorNosotros}`;
+  ellos.innerHTML = `${contadorEllos}`;
+  localStorage.setItem('nosotros', contadorNosotros)
+  localStorage.setItem('ellos', contadorEllos)
 };
 
 
