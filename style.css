@@ -43,6 +43,8 @@ html {
 body {
     height: 100vh;
     touch-action: manipulation;
+    max-width: 700px;
+    margin: auto;
 }
 
 a {
